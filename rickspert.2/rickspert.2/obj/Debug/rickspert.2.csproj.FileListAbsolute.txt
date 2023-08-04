@@ -1,0 +1,12 @@
+C:\Users\pc\Documents\proyecto de c shap final\rickspert.2\rickspert.2\bin\Debug\rickspert.2.exe.config
+C:\Users\pc\Documents\proyecto de c shap final\rickspert.2\rickspert.2\bin\Debug\rickspert.2.exe
+C:\Users\pc\Documents\proyecto de c shap final\rickspert.2\rickspert.2\bin\Debug\rickspert.2.pdb
+C:\Users\pc\Documents\proyecto de c shap final\rickspert.2\rickspert.2\obj\Debug\rickspert.2.csproj.AssemblyReference.cache
+C:\Users\pc\Documents\proyecto de c shap final\rickspert.2\rickspert.2\obj\Debug\rickspert.2.csproj.SuggestedBindingRedirects.cache
+C:\Users\pc\Documents\proyecto de c shap final\rickspert.2\rickspert.2\obj\Debug\rickspert._2.Properties.Resources.resources
+C:\Users\pc\Documents\proyecto de c shap final\rickspert.2\rickspert.2\obj\Debug\rickspert.2.csproj.GenerateResource.cache
+C:\Users\pc\Documents\proyecto de c shap final\rickspert.2\rickspert.2\obj\Debug\rickspert.2.csproj.CoreCompileInputs.cache
+C:\Users\pc\Documents\proyecto de c shap final\rickspert.2\rickspert.2\obj\Debug\rickspert.2.exe
+C:\Users\pc\Documents\proyecto de c shap final\rickspert.2\rickspert.2\obj\Debug\rickspert.2.pdb
+C:\Users\pc\Documents\proyecto de c shap final\rickspert.2\rickspert.2\obj\Debug\rickspert._2.Form1.resources
+C:\Users\pc\Documents\proyecto de c shap final\rickspert.2\rickspert.2\obj\Debug\rickspert._2.Form2.resources
