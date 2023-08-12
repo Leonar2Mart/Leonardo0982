@@ -95,5 +95,15 @@ namespace rickspert._2
         {
 
         }
+
+        private void textRiesgo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textDano_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

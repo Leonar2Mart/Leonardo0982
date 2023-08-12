@@ -36,7 +36,6 @@
             this.Analista = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Riesgo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Daño = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.S = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.F = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.P = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,7 +47,6 @@
             this.btn3 = new System.Windows.Forms.Button();
             this.btn5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewF)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -65,12 +63,13 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(254, 58);
+            this.button1.Location = new System.Drawing.Point(310, 45);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 38);
             this.button1.TabIndex = 2;
             this.button1.Text = "✔";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridViewF
             // 
@@ -80,12 +79,17 @@
             this.Archivo,
             this.Analista,
             this.Riesgo,
-            this.Daño});
-            this.dataGridViewF.Location = new System.Drawing.Point(23, 107);
+            this.Daño,
+            this.S,
+            this.F,
+            this.P,
+            this.A,
+            this.V});
+            this.dataGridViewF.Location = new System.Drawing.Point(53, 102);
             this.dataGridViewF.Name = "dataGridViewF";
             this.dataGridViewF.RowHeadersWidth = 62;
             this.dataGridViewF.RowTemplate.Height = 28;
-            this.dataGridViewF.Size = new System.Drawing.Size(672, 331);
+            this.dataGridViewF.Size = new System.Drawing.Size(1087, 331);
             this.dataGridViewF.TabIndex = 15;
             this.dataGridViewF.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -123,23 +127,6 @@
             this.Daño.MinimumWidth = 8;
             this.Daño.Name = "Daño";
             this.Daño.Width = 150;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.S,
-            this.F,
-            this.P,
-            this.A,
-            this.V});
-            this.dataGridView2.Location = new System.Drawing.Point(595, 107);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 62;
-            this.dataGridView2.RowTemplate.Height = 28;
-            this.dataGridView2.Size = new System.Drawing.Size(390, 305);
-            this.dataGridView2.TabIndex = 16;
-            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // S
             // 
@@ -183,68 +170,76 @@
             // 
             // btn1
             // 
-            this.btn1.Location = new System.Drawing.Point(701, 67);
+            this.btn1.BackColor = System.Drawing.Color.LightGreen;
+            this.btn1.Location = new System.Drawing.Point(858, 60);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(43, 38);
             this.btn1.TabIndex = 18;
             this.btn1.Text = "1";
-            this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.UseVisualStyleBackColor = false;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // btn2
             // 
-            this.btn2.Location = new System.Drawing.Point(755, 67);
+            this.btn2.BackColor = System.Drawing.Color.LimeGreen;
+            this.btn2.Location = new System.Drawing.Point(914, 60);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(43, 38);
             this.btn2.TabIndex = 19;
             this.btn2.Text = "2";
-            this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.UseVisualStyleBackColor = false;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btn4
             // 
-            this.btn4.Location = new System.Drawing.Point(866, 67);
+            this.btn4.BackColor = System.Drawing.Color.Orange;
+            this.btn4.Location = new System.Drawing.Point(1026, 60);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(43, 38);
             this.btn4.TabIndex = 21;
             this.btn4.Text = "4";
-            this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.UseVisualStyleBackColor = false;
+            this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
             // btn3
             // 
-            this.btn3.Location = new System.Drawing.Point(810, 67);
+            this.btn3.BackColor = System.Drawing.Color.Gold;
+            this.btn3.Location = new System.Drawing.Point(970, 60);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(43, 38);
             this.btn3.TabIndex = 20;
             this.btn3.Text = "3";
-            this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.UseVisualStyleBackColor = false;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // btn5
             // 
-            this.btn5.Location = new System.Drawing.Point(923, 67);
+            this.btn5.BackColor = System.Drawing.Color.Red;
+            this.btn5.Location = new System.Drawing.Point(1082, 60);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(43, 38);
             this.btn5.TabIndex = 22;
             this.btn5.Text = "5";
-            this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.UseVisualStyleBackColor = false;
+            this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1013, 450);
+            this.ClientSize = new System.Drawing.Size(1185, 450);
             this.Controls.Add(this.btn5);
             this.Controls.Add(this.btn4);
             this.Controls.Add(this.btn3);
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.dataGridViewF);
-            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewF)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -255,21 +250,20 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridViewF;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Archivo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Analista;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Riesgo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Daño;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn S;
-        private System.Windows.Forms.DataGridViewTextBoxColumn F;
-        private System.Windows.Forms.DataGridViewTextBoxColumn P;
-        private System.Windows.Forms.DataGridViewTextBoxColumn A;
-        private System.Windows.Forms.DataGridViewTextBoxColumn V;
         private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Button btn2;
         private System.Windows.Forms.Button btn4;
         private System.Windows.Forms.Button btn3;
         private System.Windows.Forms.Button btn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Archivo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Analista;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Riesgo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Daño;
+        private System.Windows.Forms.DataGridViewTextBoxColumn S;
+        private System.Windows.Forms.DataGridViewTextBoxColumn F;
+        private System.Windows.Forms.DataGridViewTextBoxColumn P;
+        private System.Windows.Forms.DataGridViewTextBoxColumn A;
+        private System.Windows.Forms.DataGridViewTextBoxColumn V;
     }
 }

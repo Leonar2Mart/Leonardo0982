@@ -10,3 +10,4 @@ C:\Users\pc\Documents\proyecto de c shap final\rickspert.2\rickspert.2\obj\Debug
 C:\Users\pc\Documents\proyecto de c shap final\rickspert.2\rickspert.2\obj\Debug\rickspert.2.pdb
 C:\Users\pc\Documents\proyecto de c shap final\rickspert.2\rickspert.2\obj\Debug\rickspert._2.Form1.resources
 C:\Users\pc\Documents\proyecto de c shap final\rickspert.2\rickspert.2\obj\Debug\rickspert._2.Form2.resources
+C:\Users\pc\Documents\proyecto de c shap final\rickspert.2\rickspert.2\obj\Debug\rickspert._2.Fase3.resources

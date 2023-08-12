@@ -69,7 +69,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(600, 32);
+            this.label1.Location = new System.Drawing.Point(582, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 25);
             this.label1.TabIndex = 7;
@@ -146,11 +146,11 @@
             this.Analista,
             this.Riesgo,
             this.Daño});
-            this.dataGridView1.Location = new System.Drawing.Point(39, 181);
+            this.dataGridView1.Location = new System.Drawing.Point(39, 189);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(807, 297);
+            this.dataGridView1.Size = new System.Drawing.Size(794, 280);
             this.dataGridView1.TabIndex = 14;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -196,6 +196,7 @@
             this.textRiesgo.Name = "textRiesgo";
             this.textRiesgo.Size = new System.Drawing.Size(198, 38);
             this.textRiesgo.TabIndex = 16;
+            this.textRiesgo.TextChanged += new System.EventHandler(this.textRiesgo_TextChanged);
             // 
             // textDano
             // 
@@ -204,6 +205,7 @@
             this.textDano.Name = "textDano";
             this.textDano.Size = new System.Drawing.Size(227, 36);
             this.textDano.TabIndex = 17;
+            this.textDano.TextChanged += new System.EventHandler(this.textDano_TextChanged);
             // 
             // label6
             // 
@@ -248,7 +250,7 @@
             this.Controls.Add(this.textFec);
             this.Controls.Add(this.textAnalista);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

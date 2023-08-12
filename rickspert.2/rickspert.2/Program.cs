@@ -8,6 +8,7 @@ namespace rickspert._2
 {
     internal static class Program
     {
+            
         /// <summary>
         /// Punto de entrada principal para la aplicación. 
         /// </summary>
@@ -17,6 +18,7 @@ namespace rickspert._2
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+            
         }
     }
 }

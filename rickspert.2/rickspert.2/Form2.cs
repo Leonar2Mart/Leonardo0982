@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -24,7 +25,7 @@ namespace rickspert._2
 
             if (form1 != null)
             {
-                 DataGridView DataGridView1 = form1.DataGridView1;
+                DataGridView DataGridView1 = form1.DataGridView1;
 
                 if (form1.DataGridView1.Rows.Count > 0)
                 {
@@ -51,6 +52,7 @@ namespace rickspert._2
                 }
             }
         }
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -67,6 +69,81 @@ namespace rickspert._2
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewF.CurrentRow != null && dataGridViewF.CurrentCell != null)
+            {
+                int rowIndex = dataGridViewF.CurrentCell.RowIndex;
+                int columnIndex = dataGridViewF.CurrentCell.ColumnIndex;
+
+                DataGridViewCell cell = dataGridViewF.Rows[rowIndex].Cells[columnIndex];
+
+                // Cambiar el color de fondo de la celda
+                cell.Style.BackColor = Color.LightGreen;
+            }
+        }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewF.CurrentRow != null && dataGridViewF.CurrentCell != null)
+            {
+                int rowIndex = dataGridViewF.CurrentCell.RowIndex;
+                int columnIndex = dataGridViewF.CurrentCell.ColumnIndex;
+
+                DataGridViewCell cell = dataGridViewF.Rows[rowIndex].Cells[columnIndex];
+
+                // Cambiar el color de fondo de la celda
+                cell.Style.BackColor = Color.LimeGreen;
+            }
+        }
+
+        private void btn3_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewF.CurrentRow != null && dataGridViewF.CurrentCell != null)
+            {
+                int rowIndex = dataGridViewF.CurrentCell.RowIndex;
+                int columnIndex = dataGridViewF.CurrentCell.ColumnIndex;
+
+                DataGridViewCell cell = dataGridViewF.Rows[rowIndex].Cells[columnIndex];
+
+                // Cambiar el color de fondo de la celda
+                cell.Style.BackColor = Color.Gold;
+            }
+        }
+
+        private void btn4_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewF.CurrentRow != null && dataGridViewF.CurrentCell != null)
+            {
+                int rowIndex = dataGridViewF.CurrentCell.RowIndex;
+                int columnIndex = dataGridViewF.CurrentCell.ColumnIndex;
+
+                DataGridViewCell cell = dataGridViewF.Rows[rowIndex].Cells[columnIndex];
+
+                // Cambiar el color de fondo de la celda
+                cell.Style.BackColor = Color.Orange;
+            }
+        }
+
+        private void btn5_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewF.CurrentRow != null && dataGridViewF.CurrentCell != null)
+            {
+                int rowIndex = dataGridViewF.CurrentCell.RowIndex;
+                int columnIndex = dataGridViewF.CurrentCell.ColumnIndex;
+
+                DataGridViewCell cell = dataGridViewF.Rows[rowIndex].Cells[columnIndex];
+
+                // Cambiar el color de fondo de la celda
+                cell.Style.BackColor = Color.Red;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
